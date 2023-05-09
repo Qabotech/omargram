@@ -1,0 +1,1 @@
+$("#nav-profile").attr("src", localStorage.getItem("user_avatar"));

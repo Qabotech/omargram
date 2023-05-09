@@ -1,0 +1,71 @@
+#posts {
+    width: 100%;
+    gap: 50px;
+    margin: 1em 0 50px 0;
+}
+
+#posts .post {
+    width: 100%;
+    min-height: 70vh;
+    background: black;
+    border-bottom: 1px solid var(--second-color);
+    padding-bottom: 1em;
+}
+
+#posts .post .acc {
+    gap: 1em;
+    padding: 1em;
+}
+
+#posts .post .acc h3 {
+    font-weight: 500;
+}
+
+#posts .post .acc h3 span {
+    color: var(--second-color);
+    font-size: 12px;
+}
+
+
+#posts .post .acc img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+#posts .post .img img {
+    width: 100%;
+    border: 1px solid var(--second-color);
+    background: white;
+}
+
+#posts .post .lss-bar {
+    gap: 1em;
+    padding: 1em;
+}
+
+#posts .post .lss-bar i:first-child {
+    margin-left: 0;
+    transition: all 300ms ease-in-out;
+}
+
+#posts .post .lss-bar i {
+    font-size: 1.7em;
+    margin-left: 0.5em;
+}
+
+#posts .post .description {
+    padding: 0 1em;
+}
+
+
+.fa-heart.liked {
+    color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    main, #posts {
+        width: 100vw;
+    }
+}
