@@ -46,7 +46,7 @@ include("functions.php");
 
         <form action="login.php" method="post" class="<?php echo $login; ?>">
             <input type="text" name="email" id="email" placeholder="Email">
-            <input type="password" name="PWD" id="PWD" placeholder="Passwort">
+            <input type="password" name="PWD" id="PWD" placeholder="Passwort" value="0">
             <input type="submit" name="login" value="Einloggen">
             <br>
             <h4>Nicht mitglied ? <a href="./?mode=Registrieren">zu Registrieren</a></h4>

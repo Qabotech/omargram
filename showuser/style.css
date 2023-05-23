@@ -1,307 +1,307 @@
-body {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-}
-
-.stories {
-    width: 100%;
-    height: 120px;
-    gap: 10px;
-    overflow-x: scroll;
-    position: relative;
-    z-index: 2;
-}
-
-#stories {
-    position: relative;
-    width: 100%;
-    z-index: 99;
-}
-
-.stories .story:first-child {
-    margin-left: 10px;
-}
-
-.stories .story:last-child {
-    margin-right: 10px;
-}
-
-.story .img {
-    min-width: 80px;
-    width: 80px;
-    height: 80px;
-    background: red;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 5px solid cadetblue;
-}
-
-.story .img img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    object-position: center;
-}
-
-.story .text {
-    text-align: center;
-    width: 100%;
-}
-
-.story .text h4 {
-    font-weight: 300;
-}
-
-#stories i {
-    position: absolute;
-    top: 42%;
-    transform: translate(-50%, -50%);
-    background-color: black;
-    width: 1.5em;
-    height: 1.5em;
-    display: grid;
-    place-content: center;
-    border-radius: 50%;
-    z-index: 3;
-
-}
-
-#stories i.fa-angle-right {
-    left: 97%;
-}
-
-#stories i.fa-angle-left {
-    left: 1em;
-}
-
-#posts {
-    width: 100%;
-    gap: 50px;
-    margin: 1em 0 50px 0;
-}
-
-#posts .post {
-    width: 100%;
-    min-height: 70vh;
-    background: black;
-    border-bottom: 1px solid var(--second-color);
-    padding-bottom: 1em;
-}
-
-#posts .post .acc {
-    gap: 1em;
-    padding: 1em;
-}
-
-#posts .post .acc h3 {
-    font-weight: 500;
-}
-
-#posts .post .acc h3 span, #seit {
-    color: var(--second-color);
-    font-size: 12px;
-}
-
-
-#posts .post .acc img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-
-}
-
-#posts .post .img img {
-    width: 100%;
-    border: 1px solid var(--second-color);
-    background: white;
-}
-
-#posts .post .lss-bar {
-    gap: 1em;
-    padding: 1em;
-}
-
-#posts .post .lss-bar i:first-child {
-    margin-left: 0;
-    transition: all 300ms ease-in-out;
-}
-
-#posts .post .lss-bar i {
-    font-size: 1.7em;
-    margin-left: 0.5em;
-    cursor: pointer;
-}
-
-#posts .post .description {
-    padding: 0 1em;
-}
-
-
-.fa-heart.liked {
-    color: red;
-}
-
-@media only screen and (max-width: 600px) {
-    main, #posts {
-        width: 100vw;
-    }
-}
-
-.comment-form {
-    padding: 1em;
-    display: flex;
-    gap: 5px;
-}
-
-.comment-form textarea {
-    width: 80%;
-    max-width: 80%;
-    min-width: 80%;
-    max-height: 10em;
-    background: transparent;
-    height: 3em;
-    padding: 3px;
-    resize: none;
-}
-
-.comment-form input {
-    width: 19%;
-    max-width: 19%;
-    height: 3em;
-    background: var(--blue-color);
-    border-radius: 5px;
-}
-
-.hide {
-    display: none !important;
-}
-
-.comments-wrap {
-    padding: 1em;
-}
-
-.comment img {
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.comment p {
-    margin-left: 2em;
-}
-
-.story .description {
-    display: none;
-}
-
-.story.full {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    max-width: 600px;
-    transform: translate(-50%, -50%);
-    z-index: 99;
-}
-
-.story.full .img {
-    width: 100%;
-    height: 100vh;
-    border-radius: 0;
-}
-
-.story.full .img {
-    width: 100%;
-    height: 100vh;
-    border-radius: 0;
-}
-
-.story.full .img img {
-    object-fit: cover;
-
-}
-
-.story.full .description {
-    display: flex !important;
-}
-
-.story.full .text {
-    height: 100vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.story.full .text .description {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    background: rgba(0, 0, 0, 0.247);
-    width: 600px;
-    height: 200px;
-    padding: 1em;
-}
-
-.story .text .acc img {
-    display: none;
-}
-
-.story.full .text .acc img {
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
-
-.story.full .text .acc {
-    justify-content: unset;
-    padding: 1em;
-    gap: 1em;
-}
-
-.story.full .text .acc h4 {
-    text-align: center;
-    color: black !important;
-    font-weight: 500;
-}
-
-.story .text .acc h4 {
-    text-align: center;
-}
-
-.story .text .acc {
-    width: 100%;
-    justify-content: center;
-}
-
-.overlay {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--background);
-    z-index: 98;
-}
-
-main>.flex:first-child img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-}
-
-main>.flex:first-child {
-    gap: 3em;
-    margin: 5em 0;
-}
-
-#seit {
-    font-size: 0.7em;
+body {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.stories {
+    width: 100%;
+    height: 120px;
+    gap: 10px;
+    overflow-x: scroll;
+    position: relative;
+    z-index: 2;
+}
+
+#stories {
+    position: relative;
+    width: 100%;
+    z-index: 99;
+}
+
+.stories .story:first-child {
+    margin-left: 10px;
+}
+
+.stories .story:last-child {
+    margin-right: 10px;
+}
+
+.story .img {
+    min-width: 80px;
+    width: 80px;
+    height: 80px;
+    background: red;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid cadetblue;
+}
+
+.story .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+
+.story .text {
+    text-align: center;
+    width: 100%;
+}
+
+.story .text h4 {
+    font-weight: 300;
+}
+
+#stories i {
+    position: absolute;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    width: 1.5em;
+    height: 1.5em;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    z-index: 3;
+
+}
+
+#stories i.fa-angle-right {
+    left: 97%;
+}
+
+#stories i.fa-angle-left {
+    left: 1em;
+}
+
+#posts {
+    width: 100%;
+    gap: 50px;
+    margin: 1em 0 50px 0;
+}
+
+#posts .post {
+    width: 100%;
+    min-height: 70vh;
+    background: black;
+    border-bottom: 1px solid var(--second-color);
+    padding-bottom: 1em;
+}
+
+#posts .post .acc {
+    gap: 1em;
+    padding: 1em;
+}
+
+#posts .post .acc h3 {
+    font-weight: 500;
+}
+
+#posts .post .acc h3 span, #seit {
+    color: var(--second-color);
+    font-size: 12px;
+}
+
+
+#posts .post .acc img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+#posts .post .img img {
+    width: 100%;
+    border: 1px solid var(--second-color);
+    background: white;
+}
+
+#posts .post .lss-bar {
+    gap: 1em;
+    padding: 1em;
+}
+
+#posts .post .lss-bar i:first-child {
+    margin-left: 0;
+    transition: all 300ms ease-in-out;
+}
+
+#posts .post .lss-bar i {
+    font-size: 1.7em;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+#posts .post .description {
+    padding: 0 1em;
+}
+
+
+.fa-heart.liked {
+    color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    main, #posts {
+        width: 100vw;
+    }
+}
+
+.comment-form {
+    padding: 1em;
+    display: flex;
+    gap: 5px;
+}
+
+.comment-form textarea {
+    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
+    max-height: 10em;
+    background: transparent;
+    height: 3em;
+    padding: 3px;
+    resize: none;
+}
+
+.comment-form input {
+    width: 19%;
+    max-width: 19%;
+    height: 3em;
+    background: var(--blue-color);
+    border-radius: 5px;
+}
+
+.hide {
+    display: none !important;
+}
+
+.comments-wrap {
+    padding: 1em;
+}
+
+.comment img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.comment p {
+    margin-left: 2em;
+}
+
+.story .description {
+    display: none;
+}
+
+.story.full {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 600px;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.story.full .img {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+}
+
+.story.full .img {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+}
+
+.story.full .img img {
+    object-fit: cover;
+
+}
+
+.story.full .description {
+    display: flex !important;
+}
+
+.story.full .text {
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.story.full .text .description {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background: rgba(0, 0, 0, 0.247);
+    width: 600px;
+    height: 200px;
+    padding: 1em;
+}
+
+.story .text .acc img {
+    display: none;
+}
+
+.story.full .text .acc img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.story.full .text .acc {
+    justify-content: unset;
+    padding: 1em;
+    gap: 1em;
+}
+
+.story.full .text .acc h4 {
+    text-align: center;
+    color: black !important;
+    font-weight: 500;
+}
+
+.story .text .acc h4 {
+    text-align: center;
+}
+
+.story .text .acc {
+    width: 100%;
+    justify-content: center;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--background);
+    z-index: 98;
+}
+
+main>.flex:first-child img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+main>.flex:first-child {
+    gap: 3em;
+    margin: 5em 0;
+}
+
+#seit {
+    font-size: 0.7em;
 }

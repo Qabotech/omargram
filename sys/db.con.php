@@ -1,8 +1,8 @@
 <?php
-$serverName = "localhost";
-$DBUName = "root";
-$DBPass = "root";
-$DBName = "omargram";
+$serverName = "sql110.epizy.com";
+$DBUName = "epiz_34224806";
+$DBPass = "AdZPmNelXAM";
+$DBName = "epiz_34224806_omargram";
 
 
 $conn = mysqli_connect($serverName, $DBUName, $DBPass, $DBName);
